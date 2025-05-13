@@ -14,15 +14,3 @@ function startAudio() {
 // Listen for the first click (or touch) anywhere on the page
 window.addEventListener('click', startAudio);
 
-
-
-const overlay = document.getElementById('gifOverlay');
-
-function loopEffect() {
-  overlay.classList.remove('fade-in'); // reset animation
-  void overlay.offsetWidth;           // force reflow
-  overlay.classList.add('fade-in');
-}
-
-loopEffect(); // initial trigger
-setInterval(loopEffect, 7000); // repeat every 7s
